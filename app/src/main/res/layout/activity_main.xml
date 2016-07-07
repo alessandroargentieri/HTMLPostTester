@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/round_corners"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context="mawashi.alex.htmlposttester.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="HTTP Post Tester"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INDIRIZZO: "
+            android:layout_weight="2"
+            android:id="@+id/textViewIND" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserire Indirizzo"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:id="@+id/editTextIND" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MESSAGGIO: "
+            android:layout_weight="2"
+            android:id="@+id/textViewMESS" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserire MESSAGGIO"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:id="@+id/editTextMESS" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="INVIA"
+        android:onClick="Invia"
+        android:elevation="20dp"
+        android:id="@+id/button"
+        android:background="@drawable/round_corners"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Risposta: "
+        android:id="@+id/textViewRisposta"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
